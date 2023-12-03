@@ -3,7 +3,7 @@
 ## Create vite app
 
 ```bash
-$ npm create vite@latest meetnote -- --template react
+$ npm create vite@latest meetnote -- --template react && cd $_
 $ echo "v18.18.0" > .nvmrc | nvm use
 $ npm i
 ```
@@ -29,13 +29,24 @@ export default {
 
 ```
 
-### prepend into src/index.css
+### prepend into src/global.css
 
 ```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
+
+## install following dependencies
+
+```bash
+$ npm install --save react-rnd valtio daisyui
+
+$ npm install --save-dev @types/react-rnd @crxjs/vite-plugin @types/chrome @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser @vitejs/plugin-react-swc autoprefixer eslint eslint-plugin-react eslint-plugin-react-hooks
+
+```
+
+---
 
 # React + Vite
 
