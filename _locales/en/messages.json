@@ -1,0 +1,20 @@
+{
+  "appName": {
+    "message": "Live interpretation and notes For Google Meet",
+    "description": "Name of app"
+  },
+  "appDesc": {
+    "message": "Live interpretation and notes For Google Meet.",
+    "description": "Description of the application, displayed at chrome://extensions and extension description."
+  },
+  "count": {
+    "message": "Count is $COUNT$",
+    "description": "Counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  }
+}

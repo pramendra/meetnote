@@ -1,0 +1,20 @@
+{
+  "appName": {
+    "message": "Google Meetのためのライブ通訳とノート",
+    "description": "アプリの名前"
+  },
+  "appDesc": {
+    "message": "Google Meetのためのライブ通訳とノート。",
+    "description": "アプリケーションの説明、chrome://extensionsおよび拡張機能の説明に表示されます。"
+  },
+  "count": {
+    "message": "Count is $COUNT$",
+    "description": "Counter",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  }
+}
