@@ -1,12 +1,16 @@
 import { useState } from 'react';
+// import useExtensionState from './../hooks/useExtensionState';
+import { updateState } from '../state/extensionState';
+
 import './../global.css';
 import './index.css';
 
 function PopupApp() {
-  const [count, setCount] = useState(0);
   const appName = chrome.i18n.getMessage('appName');
-  const handleButtonClick = () => {
-    chrome.runtime.sendMessage({ action: 'startCaption' });
+
+  const handleButtonClick = (e: any) => {
+    e.preventDefault();
+    chrome.runtime.sendMessage({ message: 'StartCaption' });
   };
   return (
     <>
@@ -16,12 +20,6 @@ function PopupApp() {
           start live caption
         </button>
         <p className="py-4"></p>
-        <button
-          className="btn btn-primary"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          {chrome.i18n.getMessage('count', count.toString())}
-        </button>
       </div>
     </>
   );
